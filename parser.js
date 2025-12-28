@@ -150,7 +150,7 @@ if (!fs.existsSync(SCRIPTS_DIR)) fs.mkdirSync(SCRIPTS_DIR);
   console.log('Close the browser window to stop the parser (or press Ctrl+C in terminal).');
 
   // Keep alive until browser is closed
-  await page.waitForEvent('close');
+  await page.waitForEvent('close', { timeout: 0 });
 
   await browser.close();
   httpLogStream.end();
