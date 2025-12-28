@@ -1,0 +1,5 @@
+node_modules/
+captured_data/
+package-lock.json
+.cache/
+.npm/
