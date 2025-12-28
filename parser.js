@@ -144,7 +144,7 @@ if (!fs.existsSync(SCRIPTS_DIR)) fs.mkdirSync(SCRIPTS_DIR);
 
   // Navigate to the game
   console.log('Navigating to https://skazka.mobi/ ...');
-  await page.goto('https://skazka.mobi/');
+  await page.goto('https://skazka.mobi/', { timeout: 0 });
 
   console.log('Ready! Please interact with the game browser window.');
   console.log('Close the browser window to stop the parser (or press Ctrl+C in terminal).');
